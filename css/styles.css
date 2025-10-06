@@ -1,3 +1,134 @@
+/* Responsividade geral */
+@media (max-width: 1200px) {
+  .content, .about-content, .feature-card-block, .card-wrapper {
+    max-width: 95vw;
+    padding: 10px;
+  }
+  section .filter-card {
+    width: 90vw;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+  .search-input, .search-button {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-block img {
+    width: 80%;
+    position: static;
+    margin: 0 auto;
+    display: block;
+  }
+  .header-block .text {
+    position: static;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .left, .right {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+  }
+  .right h3, .right p {
+    text-align: center;
+    width: 100%;
+  }
+  .feature-card-block {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10px;
+  }
+  section .card-wrapper {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  header {
+    height: auto;
+    padding: 10px;
+  }
+  .header-block {
+    height: auto;
+    min-width: 0;
+    padding: 10px;
+  }
+  .header-block img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: static;
+  }
+  .header-block .text {
+    position: static;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+  section .filter-card {
+    width: 100vw;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  .search-input, .search-button {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .left, .right {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+  }
+  .right h3, .right p {
+    text-align: center;
+    width: 100%;
+  }
+  .feature-card-block {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10px;
+  }
+  section .card-wrapper {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    gap: 20px;
+  }
+  footer .main {
+    padding: 10px;
+  }
+}
 /* font importing */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
@@ -387,7 +518,7 @@ footer .main {
     margin-bottom: 20px;
     text-align: left;
   }
-}
+
 
 .footer-links h4 {
   margin-bottom: 10px;
@@ -414,87 +545,4 @@ footer .last {
   font-weight: bold;
 }
 
-/* Responsive adjustments */
-
-@media (max-width: 576px) {
-  nav ul li {
-    display: none;
-  }
-
-  .header-block img {
-    width: 70%;
-    position: absolute;
-    right: 16%;
-    top: 30%;
-  }
-
-  .header-block .text {
-    position: absolute;
-    bottom: 10%;
-    left: 15;
-  }
-
-  section .filter-card {
-    width: 390px;
-    padding: 0px 10px;
-  }
-
-  .search-input {
-    max-width: 700px;
-    min-width: 240px;
-  }
-
-  .search-button {
-    max-width: 150px;
-    min-width: 80px;
-  }
-
-  .about {
-    margin-top: 100px;
-  }
-
-  .title-wrapper-about {
-    margin-bottom: 20px;
-  }
-  .about-content {
-    flex-direction: column;
-    height: 100%;
-  }
-  .left {
-    display: none;
-  }
-  .right {
-    width: 90%;
-  }
-
-  .right p {
-    width: 100%;
-    margin: 0px;
-    text-align: left;
-  }
-
-  .features {
-    height: 100%;
-  }
-
-  .feature-card-block {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer {
-    height: 100%;
-  }
-
-  footer .main {
-    height: 100%;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 10%;
-    gap: 20px;
-  }
-}
+/* Removido bloco duplicado de responsividade para evitar conflitos de CSS. Todas regras de responsividade estão agrupadas acima. */
